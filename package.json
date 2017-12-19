@@ -1,0 +1,24 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "An example of node app",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "scraperjs": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sajgon/sub-vintergatan5a.se.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sajgon/sub-vintergatan5a.se/issues"
+  },
+  "homepage": "https://github.com/Sajgon/sub-vintergatan5a.se#readme"
+}
