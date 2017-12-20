@@ -31,10 +31,6 @@ updateWeek();
 
 app.get('/', function (req, res) {
     
-    console.log("req.IncomingMessage",req.IncomingMessage );
-    
-    
-    
     // Connection URL
     const dbName = "Vintergatan5a-analystics";
     var url = 'mongodb://localhost:27017/Vintergatan5a-analystics';
@@ -71,13 +67,6 @@ app.get('/', function (req, res) {
     });
     
     
-    
-    
-    
-    
-    
-    
-    
-   console.log("called for week", week);
+   //console.log("called for week", week);
    res.send("Vecka: " + week);
 })
