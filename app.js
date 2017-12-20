@@ -61,14 +61,10 @@ app.get('/', function (req, res) {
         
         const myDB = database.db(dbName);
         const collection = myDB.collection('visitors');
-        
-        findDocuments(myDB, function() {
-            //console.log("Found data!");
+    
+        insertDocuments(myDB, function() {
+            console.log("Inserted Vistor data!");
         });
-        
-        //insertDocuments(myDB, function() {
-            //console.log("Inserted data!");
-        //});
          
     });
     
