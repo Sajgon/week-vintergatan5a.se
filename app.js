@@ -31,7 +31,7 @@ updateWeek();
 
 app.get('/', function (req, res) {
     
-    console.log("req",req);
+    console.log("req.IncomingMessage",req.IncomingMessage );
     
     
     
@@ -46,8 +46,10 @@ app.get('/', function (req, res) {
           var collection = db.collection('visitors');
           // Insert some documents
           let d = new Date();
+          let URL = req.headers.host;
           
-          collection.insertMany([{date: d.getTime()}], function(err, result) {
+          
+          collection.insertMany([{date: d.getTime(), url: URL || null}], function(err, result) {
             assert.equal(err, null);
             //console.log("Inserted "+result.ops.length+" documents into the document collection");
             callback(result);
