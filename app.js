@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const scraperjs = require('scraperjs');
 
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
+
 let week = 0;
 //app.use(express.static(__dirname + '/www'));
 
